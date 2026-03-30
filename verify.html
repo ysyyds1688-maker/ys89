@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>身份驗證教學 - YS89</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      min-height: 100vh;
+    }
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #c9a84c;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header h1 {
+      color: #c9a84c;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .header .subtitle {
+      color: #999;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    .back-link {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #c9a84c;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+    }
+    .step {
+      margin-bottom: 32px;
+      background: #1a1a2e;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #2a2a3e;
+    }
+    .step-header {
+      background: linear-gradient(135deg, #c9a84c 0%, #b8962e 100%);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .step-number {
+      background: #0a0a0a;
+      color: #c9a84c;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .step-title {
+      color: #0a0a0a;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .step-content {
+      padding: 16px;
+    }
+    .step-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #ccc;
+      margin-bottom: 12px;
+    }
+    .step-desc .highlight {
+      color: #c9a84c;
+      font-weight: bold;
+    }
+    .step-img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #333;
+      display: block;
+    }
+    .note-box {
+      background: #2a1a0a;
+      border: 1px solid #c9a84c;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 24px 0;
+    }
+    .note-box .note-title {
+      color: #c9a84c;
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .note-box .note-text {
+      color: #ddd;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .final-step {
+      background: linear-gradient(135deg, #1a2e1a 0%, #162e16 100%);
+      border: 1px solid #4caf50;
+      border-radius: 12px;
+      padding: 20px 16px;
+      margin-top: 24px;
+    }
+    .final-step h3 {
+      color: #4caf50;
+      font-size: 17px;
+      margin-bottom: 12px;
+    }
+    .final-step p {
+      color: #ccc;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    .final-step .highlight {
+      color: #c9a84c;
+      font-weight: bold;
+    }
+    .final-step .green {
+      color: #4caf50;
+      font-weight: bold;
+    }
+    .arrow {
+      text-align: center;
+      color: #c9a84c;
+      font-size: 24px;
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html" class="back-link">&larr; 返回</a>
+    <h1>身份驗證教學</h1>
+    <div class="subtitle">請依照以下步驟完成身份驗證</div>
+  </div>
+
+  <div class="container">
+
+    <!-- Step 1 -->
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">1</div>
+        <div class="step-title">進入帳戶管理</div>
+      </div>
+      <div class="step-content">
+        <p class="step-desc">
+          登入後進入到 <span class="highlight">「我的帳戶」</span> 頁面，點擊 <span class="highlight">「帳戶管理」</span>。
+        </p>
+        <img class="step-img" src="images/step1.jpg" alt="步驟1 - 進入帳戶管理" />
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">2</div>
+        <div class="step-title">前往身分證驗證</div>
+      </div>
+      <div class="step-content">
+        <p class="step-desc">
+          點擊姓名欄位的 <span class="highlight">「前往身分證驗證」</span>。
+        </p>
+        <div class="note-box">
+          <div class="note-title">注意</div>
+          <div class="note-text">如看到須設定提款密碼，請先完成設定，若無請依序進行下一個步驟。</div>
+        </div>
+        <img class="step-img" src="images/step2.jpg" alt="步驟2 - 前往身分證驗證" />
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">3</div>
+        <div class="step-title">填寫個人資料</div>
+      </div>
+      <div class="step-content">
+        <p class="step-desc">
+          請依序填寫 <span class="highlight">「姓名」</span>、<span class="highlight">「生日」</span>、<span class="highlight">「身分證號碼」</span>。
+        </p>
+        <img class="step-img" src="images/step3.jpg" alt="步驟3 - 填寫個人資料" />
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">4</div>
+        <div class="step-title">填寫銀行資訊</div>
+      </div>
+      <div class="step-content">
+        <p class="step-desc">
+          請選擇 <span class="highlight">「銀行」</span> 與 <span class="highlight">「分行名稱」</span>，並填寫 <span class="highlight">「銀行帳號」</span>（非信用卡卡號）。
+        </p>
+        <img class="step-img" src="images/step4.jpg" alt="步驟4 - 填寫銀行資訊" />
+      </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">5</div>
+        <div class="step-title">上傳存簿封面</div>
+      </div>
+      <div class="step-content">
+        <p class="step-desc">
+          上傳您的 <span class="highlight">「銀行存簿封面」</span> 照片。
+        </p>
+        <img class="step-img" src="images/step5.jpg" alt="步驟5 - 上傳存簿封面" />
+      </div>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">6</div>
+        <div class="step-title">上傳身分證正面</div>
+      </div>
+      <div class="step-content">
+        <p class="step-desc">
+          上傳 <span class="highlight">「身分證正面」</span> 照片。
+        </p>
+        <img class="step-img" src="images/step6.jpg" alt="步驟6 - 上傳身分證正面" />
+      </div>
+    </div>
+
+    <!-- Step 7 -->
+    <div class="step">
+      <div class="step-header">
+        <div class="step-number">7</div>
+        <div class="step-title">上傳身分證反面並提交</div>
+      </div>
+      <div class="step-content">
+        <p class="step-desc">
+          上傳 <span class="highlight">「身分證反面」</span> 照片，完成後點擊 <span class="highlight">「立即驗證」</span>。
+        </p>
+        <img class="step-img" src="images/step7.jpg" alt="步驟7 - 上傳身分證反面" />
+      </div>
+    </div>
+
+    <!-- Final Step -->
+    <div class="final-step">
+      <h3>驗證完成後操作</h3>
+      <p>
+        點擊完 <span class="highlight">「立即驗證」</span> 後，請回到客服對話視窗，並進行以下操作與真人客服進行審核：
+      </p>
+      <br />
+      <p>
+        點擊 <span class="highlight">「近期優惠」</span>
+      </p>
+      <div class="arrow">&darr;</div>
+      <p>
+        點擊 <span class="highlight">「註冊優惠」</span>
+      </p>
+      <div class="arrow">&darr;</div>
+      <p>
+        點擊 <span class="green">「已完成驗證」</span>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
