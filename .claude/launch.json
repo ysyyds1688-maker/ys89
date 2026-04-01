@@ -4,9 +4,8 @@
     {
       "name": "ys89-site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8090"],
-      "port": 8090,
-      "cwd": "/Users/user/Downloads/ys89"
+      "runtimeArgs": ["-m", "http.server", "9123"],
+      "port": 9123
     }
   ]
 }
